@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IES O Ribeiro - Sitio Oficial</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --purple-primary: #8e44ad;
+            --green-secondary: #a8d5a8;
+            --green-bg: #f0f7f0;
+        }
+        .bg-brand-purple {
+            background-color: var(--purple-primary);
+        }
+        .bg-brand-green {
+            background-color: var(--green-secondary);
+        }
+        .bg-brand-light-green {
+            background-color: var(--green-bg);
+        }
+        .text-brand-purple {
+            color: var(--purple-primary);
+        }
+        .border-brand-purple {
+            border-color: var(--purple-primary);
+        }
+        .card-shadow {
+            box-shadow: 0 4px 6px rgba(142, 68, 173, 0.1), 0 1px 3px rgba(142, 68, 173, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-brand-light-green">
+    <header class="bg-white shadow-md border-t-4 border-brand-purple">
+        <div class="container mx-auto py-4 px-6 flex items-center justify-between">
+            <div class="flex items-center">
+                <img src="/logo.png" alt="Logo IES O Ribeiro" class="h-20 mr-4">
+                <h1 class="text-3xl font-bold text-brand-purple">IES O Ribeiro</h1>
+            </div>
+            <div class="text-sm text-gray-600">
+                <a href="/" class="mx-2 hover:text-brand-purple">Galego</a> |
+                <a href="/es/" class="mx-2 hover:text-brand-purple">Castellano</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <div class="bg-white rounded-lg card-shadow p-6 mb-8 border-l-4 border-brand-purple">
+            <h2 class="text-2xl font-bold text-brand-purple mb-4 text-center">Bienvenidos a la página oficial del IES O Ribeiro</h2>
+            <p class="text-gray-600 mb-4 text-center">
+                Este es el portal de acceso a los servicios de Google Workspace for Education de nuestro centro.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 mb-8">
+            <div class="bg-white rounded-lg card-shadow p-6 hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-xl font-bold text-brand-purple mb-2 text-center">Edificio O Ribeiro</h3>
+                <p class="text-gray-600 mb-4 text-center text-sm">(ESO, Bachillerato y ESA)</p>
+                <div class="mb-4 bg-brand-green p-1 rounded-lg overflow-hidden">
+                    <img src="/edificioribeiro.png" alt="Edificio O Ribeiro" class="w-full h-48 rounded-lg object-cover">
+                </div>
+                <ul class="space-y-2 text-gray-600">
+                    <li>📍 Calle do Carballiño s/n, 32400 Ribadavia</li>
+                    <li>📞 Tel: 988 788 266</li>
+                    <li>🏫 Edificio principal - Administración</li>
+                </ul>
+            </div>
+
+            <div class="bg-white rounded-lg card-shadow p-6 hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-xl font-bold text-brand-purple mb-2 text-center">Edificio Abrente</h3>
+                <p class="text-gray-600 mb-4 text-center text-sm">(FP de Ind. Alimentaria y Mant. de Vehículos, y EOI)</p>
+                <div class="mb-4 bg-brand-green p-1 rounded-lg overflow-hidden">
+                    <img src="/edificioabrente.png" alt="Edificio Abrente" class="w-full h-48 rounded-lg object-cover">
+                </div>
+                <ul class="space-y-2 text-gray-600">
+                    <li>📍 Calle Irmáns Álvarez Araújo, 5, 32400 Ribadavia</li>
+                    <li>📞 Tel: 988 788 460</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-lg card-shadow p-6 hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-xl font-bold text-brand-purple mb-4">Enlaces Importantes</h3>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="https://www.edu.xunta.gal/centros/iesoribeiro/" 
+                           class="text-brand-purple hover:underline font-semibold">
+                            → Web Institucional del Centro
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://workspace.google.com/dashboard" 
+                           class="text-brand-purple hover:underline">
+                            → Acceso a Google Workspace
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white rounded-lg card-shadow p-6 hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-xl font-bold text-brand-purple mb-4">Contacto</h3>
+                <ul class="space-y-2 text-gray-600">
+                    <li>✉️ Email: ies.oribeiro@edu.xunta.gal</li>
+                    <li>🌐 Web: www.edu.xunta.es/centros/iesoribeiro/</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-brand-purple text-white py-6 mt-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 IES O Ribeiro - Todos los derechos reservados</p>
+            <div class="mt-4 space-x-4">
+                <a href="https://www.xunta.gal" class="hover:underline">Xunta de Galicia</a> |
+                <a href="https://www.edu.xunta.gal" class="hover:underline">Consellería de Educación</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
